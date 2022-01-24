@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 id="title">Cat Ownership Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill this form</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="rating" id="rating"
+            >How cute is the cat in the background picture?
+            <span class="clue">(from 1 to 10)</span></label
+          >
+          <input
+            type="number"
+            id="rating"
+            name="rating"
+            min="1"
+            max="10"
+            placeholder="Rating"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option describes your cat ownership</p>
+          <select name="ownership" id="dropdown" required>
+            <optgroup>
+              <option disabled selected>Select an option</option>
+              <option value="none">I don't have a cat</option>
+              <option value="wish">I wish I had a cat</option>
+              <option value="never">I will never have a cat</option>
+              <option value="happy">I am a happy cat-owner</option>
+              <option value="unhappy">I am an unhappy cat owner</option>
+            </optgroup>
+          </select>
+        </div>
+        <div id="form-group">
+          <p>Do you like cats?</p>
+          <label for="yes"
+            ><input
+              type="radio"
+              id="yes"
+              value="yes"
+              name="cat-like"
+              checked
+              class="input-radio"
+            />
+            Yes</label
+          >
+          <label for="no"
+            ><input
+              type="radio"
+              id="no"
+              value="no"
+              name="cat-like"
+              class="input-radio"
+            />
+            No</label
+          >
+          <label for="neither"
+            ><input
+              type="radio"
+              id="neither"
+              value="neither"
+              name="cat-like"
+              class="input-radio"
+            />
+            I don't care</label
+          >
+        </div>
+        <div id="form-group">
+          <p>
+            What do you like doing most with your cat?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label for="playing "
+            ><input
+              type="checkbox"
+              name="do"
+              value="playing"
+              class="input-checkbox"
+            />
+            Playing hide and seak</label
+          >
+          <label for="naps"
+            ><input
+              type="checkbox"
+              name="do"
+              value="naps"
+              class="input-checkbox"
+            />
+            Taking naps</label
+          >
+          <label for="grooming"
+            ><input
+              type="checkbox"
+              name="do"
+              value="grooming"
+              class="input-checkbox"
+            />
+            Grooming</label
+          >
+          <label for="tv"
+            ><input
+              type="checkbox"
+              name="do"
+              value="tv"
+              class="input-checkbox"
+            />Watching tv</label
+          >
+          <label for="walking"
+            ><input
+              type="checkbox"
+              name="do"
+              value="walking"
+              class="input-checkbox"
+            />Walking them out</label
+          >
+          <label for="catnip"
+            ><input
+              type="checkbox"
+              name="do"
+              value="catnip"
+              class="input-checkbox"
+            />Giving them toys with catnip</label
+          >
+        </div>
+        <div>
+          <p>Any additional comments about your feline friend?</p>
+          <textarea
+            name="comment"
+            id="comments"
+            placeholder="Enter your comment here.."
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
