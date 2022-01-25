@@ -171,3 +171,19 @@ textarea {
     align-self: center;
   }
 }
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+footer p {
+  font-size: 1rem;
+}
+footer a {
+  color: #b842a2;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer a:visited {
+  color: #3d1237;
+}
